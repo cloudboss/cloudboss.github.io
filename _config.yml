@@ -8,7 +8,7 @@ baseurl: ""
 url: "http://cloudboss.co"
 github_username: cloudboss
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 gems:
   - jekyll-seo-tag
 google_site_verification: 0J_L5gW1VdlaszclTAXx_qKROWBLPgrvF0Jp4YDcUg4
