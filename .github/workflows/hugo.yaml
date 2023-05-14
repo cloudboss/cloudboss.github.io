@@ -2,10 +2,15 @@
 name: Deploy Hugo site to Pages
 
 on:
+  pull_request:
+    types:
+      - edited
+      - opened
+      - reopened
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - main
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -50,7 +55,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -68,6 +74,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: ${{ github.event.pull_request.merged }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
