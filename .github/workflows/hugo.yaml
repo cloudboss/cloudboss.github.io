@@ -4,11 +4,11 @@ name: Deploy Hugo site to Pages
 on:
   pull_request:
     types:
+      - closed
       - edited
       - opened
       - reopened
-  # Runs on pushes targeting the default branch
-  push:
+      - synchronize
     branches:
       - master
 
