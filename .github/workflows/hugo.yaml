@@ -78,7 +78,7 @@ jobs:
   # Deployment job
   deploy:
     if: |
-      github.event.push.ref == 'refs/heads/master'
+      github.ref == 'refs/heads/master'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
