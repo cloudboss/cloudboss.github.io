@@ -1,0 +1,16 @@
+{{ define "body_classes" }}page-blog{{ end }}
+
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-14 pb-md-14">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-blog">
+        <h1 class="title">{{ .Title }}</h1>
+	<h2 class="subtitle">{{ .Params.Author }} - {{ .Date | time.Format ":date_medium" }}</h2>
+        <div class="content mt-4">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}
