@@ -1,0 +1,83 @@
+baseURL = "/"
+themesDir = "themes"
+theme = "hugo-serif-theme"
+languageCode = "en-us"
+title = "Cloudboss"
+enableEmoji = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id = ""
+  google_tag_manager_id = "G-MZGMN4NWS2"
+  favicon = "favicon-32x32.svg"
+
+  [params.homepage]
+    sticky_header = true
+    show_contact_box = true
+    show_services_button = false
+
+  [params.logo]
+    mobile = "images/logo/logo.svg"
+    mobile_height = "36px"
+    desktop = "images/logo/logo.svg"
+    desktop_height = "48px"
+    alt = "Cloudboss"
+
+  [params.fonts]
+    # sets the google font link in layouts/partials/google-fonts.html
+    google_fonts = "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap"
+    heading = "Roboto Condensed"
+    base = "Source Sans Pro"
+
+  [params.colors]
+    primary = "#399ddb"
+    black = "#2f2f41"
+    white = "#ffffff"
+    white_offset = "#f6f7ff"
+    grey = "#5C5A5A"
+
+  [params.seo]
+    meta_twitter_site = "@zerostaticio"
+    meta_twitter_creator = "@zerostaticio"
+    meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
+
+  [params.services]
+    summary_truncate = 120
+
+  [params.team]
+    summary_large_truncate = 120
+
+[menu]
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
