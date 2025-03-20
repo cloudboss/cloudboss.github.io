@@ -11,8 +11,8 @@ enableEmoji = true
     min = "0.55.0"
 
 [params]
-  google_analytics_id = ""
-  google_tag_manager_id = "G-MZGMN4NWS2"
+  google_analytics_id = "G-MZGMN4NWS2"
+  google_tag_manager_id = ""
   favicon = "favicon-32x32.svg"
 
   [params.homepage]
