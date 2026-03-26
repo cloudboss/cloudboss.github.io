@@ -1,13 +1,10 @@
 ---
-title: Homepage
-meta_title: Cloudboss
-description: Your friend in cloud automation
-intro_image: images/illustrations/pipeline.svg
-intro_image_absolute: true
-intro_image_absolute_offset: auto auto -100px -80px
-intro_image_hide_on_mobile: true
+title: Cloudboss
+description: Joseph Wright | cloud infrastructure and automation
 ---
 
-# Cloudboss - Making you the boss in cloud automation.
+I'm Joseph Wright. I've been a cloud and *Infrastructure as Code* enthusiast since I created my first EC2 instance in 2006. I loved the idea of programmable infrastructure and have been immersed in it ever since.
 
-Cloudboss does cloud automation. AWS, GCP, or Azure. Terraform, CloudFormation, Ansible, or custom code. We'll do it for you or help you get up to speed.
+I specialize in AWS, Databricks, Terraform, CI/CD, and cloud security. I've helped teams ranging from early stage startups to Fortune 500s get their infrastructure under control so it is automated, repeatable, and boring (in a good way).
+
+Check out my [open source projects](/projects/) or [contact me](/contact/).

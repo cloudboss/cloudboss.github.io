@@ -1,0 +1,219 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+html {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Cantarell", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.1rem; }
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #2a7ab5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
+
+code, pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875rem;
+}
+
+pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+code {
+  background: #f5f5f5;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+/* Header */
+.site-header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a.active {
+  color: #1a1a1a;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+/* Hero (homepage intro) */
+.hero {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Projects */
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.project-item h3 {
+  margin-bottom: 0.15rem;
+}
+
+.project-item p {
+  margin-top: 0.4rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Article meta (date/author) */
+.meta {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 1em;
+}
+
+/* Page list (articles) */
+.page-item {
+  margin-bottom: 2rem;
+}
+
+.page-item h2 {
+  margin-bottom: 0.15rem;
+}
+
+/* Article */
+article h2 {
+  margin-top: 2rem;
+}
+
+article h3 {
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+.site-footer p {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+}

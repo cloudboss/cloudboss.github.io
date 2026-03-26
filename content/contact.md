@@ -1,11 +1,12 @@
 ---
 title: Contact
-date: 2025-03-13T16:55:27-04:00
-layout: contact
+description: Get in touch
 ---
 
-Cloud automation might be complicated, frustrating, or just not your priority—but it’s ours. Cloudboss builds reliable, no-fuss solutions that keep your infrastructure running smoothly, so you can focus on what you do best.
+I'm always happy to talk shop or hear about what you're working on.
 
-Have questions? Need a smarter way to manage your cloud? We’re here to help.
+**Email:** [info@cloudboss.co](mailto:info@cloudboss.co)
 
-📩 Get in touch today—let’s make cloud automation one less thing on your plate.
+**Book a call:** [Schedule on Calendly](https://calendly.com/joseph-cloudboss/cloudboss-introduction)
+
+**LinkedIn:** [linkedin.com/in/rjosephwright](https://www.linkedin.com/in/rjosephwright)
