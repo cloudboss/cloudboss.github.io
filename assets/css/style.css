@@ -175,6 +175,20 @@ main {
   margin-bottom: 0.15rem;
 }
 
+/* Note blocks */
+.note {
+  background: #f5f5f5;
+  border-left: 3px solid #2a7ab5;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
 /* Article */
 article h2 {
   margin-top: 2rem;

@@ -27,3 +27,6 @@ summarylength = 40
     name = "Contact"
     url = "/contact/"
     weight = 3
+
+[markup.goldmark.parser.attribute]
+block = true
