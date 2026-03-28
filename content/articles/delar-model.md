@@ -83,7 +83,7 @@ Why do we need them? Because root modules should not be reused, but we also want
 
 An example of an apex module might be a Kubernetes cluster management module. It might depend on a control plane module, multiple calls to a node group module, and maybe some additional configuration modules. Since your root module would grow quite large if you called all of them and were doing `for_each` over the node groups, you decide to create one single apex module that defines parameters and calls all the dependent modules. Now your root modules are simplified because they only need to call one module and pass parameters to it.
 
-Note that as discussed in the library layer, the apex module doesn't embed a bunch of other modules, it depends on them and calls them.
+Note that as discussed in the library layer, the apex module doesn't embed a bunch of other modules, it depends on them and calls them. And again, this is not really Terraform-specific. You can create apex Ansible roles, for example.
 
 ## Example
 
@@ -91,7 +91,7 @@ The repository [https://github.com/cloudboss/terraform-aws-tailscale-subnet-rout
 
 It contains three files: `main.tf`, `state.tf`, and `vars.tf`. Notice how `vars.tf` just defines locals that are passed to the module in `main.tf`. There is no need for a `variables.tf` and `*.tfvars` because this is not meant to be reused. Another environment would use the same `main.tf` and modify only `state.tf` and `vars.tf`.
 
-The execution layer for this is to run the following commands with my AWS credentials in scope:
+The execution layer for this is to run the following commands with your AWS credentials in scope:
 
 ```bash
 terraform init
