@@ -12,6 +12,12 @@ summarylength = 40
   calendar = "https://calendly.com/joseph-cloudboss/cloudboss-introduction"
   linkedin = "https://www.linkedin.com/in/rjosephwright"
 
+[params.giscus]
+  repo = "cloudboss/cloudboss.github.io"
+  repo_id = "MDEwOlJlcG9zaXRvcnk2OTcyNDgxNg=="
+  category = "Announcements"
+  category_id = "DIC_kwDOBCfqkM4C5bqE"
+
 [menu]
   [[menu.main]]
     name = "Projects"
