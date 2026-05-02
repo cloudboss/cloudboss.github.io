@@ -5,6 +5,11 @@ description: Open source projects by Joseph Wright
 
 Open source projects I've created or maintain.
 
+## Tools
+
+- **[easyto](https://github.com/cloudboss/easyto)** - Build EC2 AMIs from container images. If you have a container image that you want to run directly on EC2, easyto is for you.
+- **[keights](https://github.com/cloudboss/keights)** - Keights (rhymes with "heights") is a Kubernetes installer for AWS.
+
 ## Libraries
 
 - **[aws-sdk-zig](https://github.com/cloudboss/aws-sdk-zig)** - An AWS SDK for Zig, providing AWS service clients from Smithy models, built using a Kotlin code generator.
@@ -13,12 +18,6 @@ Open source projects I've created or maintain.
 - **[nvme-amz](https://github.com/cloudboss/nvme-amz)** - A Rust library to probe NVMe devices in Amazon EC2.
 - **[zblkpg](https://github.com/cloudboss/zblkpg)** - A Zig library to call Linux blkpg ioctls.
 - **[zest](https://github.com/cloudboss/zest)** - A custom test runner for Zig that prints per-test output and enables setup and teardown hooks in tests.
-
-
-## Tools
-
-- **[easyto](https://github.com/cloudboss/easyto)** - Build EC2 AMIs from container images. If you have a container image that you want to run directly on EC2, easyto is for you.
-- **[keights](https://github.com/cloudboss/keights)** - Keights (rhymes with "heights") is a Kubernetes installer for AWS.
 
 ## Terraform
 
