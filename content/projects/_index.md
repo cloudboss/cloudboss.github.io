@@ -7,6 +7,7 @@ Open source projects I've created or maintain.
 
 ## Tools
 
+- **[unobin](https://cloudboss.co/docs/unobin)** - Unobin compiles Infrastructure as Code to a single deployable binary called a factory.
 - **[easyto](https://github.com/cloudboss/easyto)** - Build EC2 AMIs from container images. If you have a container image that you want to run directly on EC2, easyto is for you.
 - **[keights](https://github.com/cloudboss/keights)** - Keights (rhymes with "heights") is a Kubernetes installer for AWS.
 
